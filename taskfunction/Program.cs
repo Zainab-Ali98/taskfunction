@@ -7,7 +7,7 @@ string FullName(string name)
 }
 
 //task2
- double volume( double width, double height, double length)
+ double volue( double width, double height, double length)
 {
 
     return width * height * length;
@@ -82,7 +82,8 @@ Console.WriteLine(" enter values");
 double valueA =Convert.ToDouble(Console.ReadLine());
 double valueB =Convert.ToDouble(Console.ReadLine());
 double valueC =Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("the valume is:   " + volume(valueA, valueB, valueC));
+Console.WriteLine("the value is:   " + volue(valueA, valueB, valueC));
+Console.WriteLine(" the value is overloaded" + volue(1, 2, 3)); //bonus
 
 //task3
 Console.WriteLine("enter the number");
@@ -99,7 +100,7 @@ Console.WriteLine("enter a letter");
 char check = Convert.ToChar(Console.ReadLine());
 Console.WriteLine(letters(check));
 
-
+//task6
 Console.WriteLine("enter amount");
 double originalAmount = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine(" the convertion amount is :");
