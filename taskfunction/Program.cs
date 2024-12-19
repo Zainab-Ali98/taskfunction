@@ -1,9 +1,11 @@
 ﻿#region AllFunction
 
 //task1
+using System.ComponentModel.Design;
+
 string FullName(string name)
 {
-    return "greetings" +name;
+    return "Hello" +name;
 }
 
 //task2
@@ -38,17 +40,24 @@ double Celsius( double temp)
 
 //task5
 string letters(char check){
-    if (check == 'a' || check == 'o' || check == 'u' || check == 'i' || check == 'e' )
+
+    if(char.IsLetter(check))// bonus
     {
-        return "vowel";
+        if (check == 'a' || check == 'o' || check == 'u' || check == 'i' || check == 'e')
+
+            return check + " is a vowel";
+
+        else
+            return check + " is a constant";
             }
 
     else
     {
-        return "constant";
+        return check + "is not alphabetical";//bonus
     }
 
 }
+
 
 //task6
 double currency( double originalAmount, double conversionRate)
@@ -83,7 +92,8 @@ double valueA =Convert.ToDouble(Console.ReadLine());
 double valueB =Convert.ToDouble(Console.ReadLine());
 double valueC =Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("the value is:   " + volue(valueA, valueB, valueC));
-Console.WriteLine(" the value is overloaded" + volue(1, 2, 3)); //bonus
+//bonus
+Console.WriteLine(" the value is overloaded" + volue(1, 2, 3)); 
 
 //task3
 Console.WriteLine("enter the number");
