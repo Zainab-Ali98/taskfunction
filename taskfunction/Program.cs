@@ -3,7 +3,7 @@
 //task1
 string FullName(string name)
 {
-    return  name;
+    return "greetings" +name;
 }
 
 //task2
@@ -75,7 +75,7 @@ double currency( double originalAmount, double conversionRate)
 //Console.WriteLine(" welcome " + Console.ReadLine());
 Console.WriteLine("enter your name ");
 string name = Console.ReadLine();
-Console.WriteLine("welcome    " + FullName(name));
+Console.WriteLine( FullName(name));
 
 //task2
 Console.WriteLine(" enter values");
