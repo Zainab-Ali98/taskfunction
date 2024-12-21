@@ -9,7 +9,7 @@ string FullName(string name)
 }
 
 //task2
- double volue( double width, double height, double length)
+ double volume( double width, double height, double length)
 {
 
     return width * height * length;
@@ -91,9 +91,9 @@ Console.WriteLine(" enter values");
 double valueA =Convert.ToDouble(Console.ReadLine());
 double valueB =Convert.ToDouble(Console.ReadLine());
 double valueC =Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("the value is:   " + volue(valueA, valueB, valueC));
+Console.WriteLine("the valume is:   " + volume(valueA, valueB, valueC));
 //bonus
-Console.WriteLine(" the value is overloaded" + volue(1, 2, 3)); 
+Console.WriteLine(" the valume is overloaded    " + volume(1, 2, 3)); 
 
 //task3
 Console.WriteLine("enter the number");
